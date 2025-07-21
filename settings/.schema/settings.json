@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://quintoandar.com/schemas/config/settings.schema.json",
+    "title": "Settings",
+    "description": "A group of Settings and Feature Flags",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "The unique name of this group of settings or feature flags.",
+            "type": "string"
+        },
+        "settings": {
+            "description": "Array of settings.",
+            "type": "array",
+            "items": {
+                "$ref": "./setting.json#"
+            },
+            "minItems": 0,
+            "uniqueItems": true
+        }
+    },
+    "required": [
+        "name",
+        "settings"
+    ]
+}

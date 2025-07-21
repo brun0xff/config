@@ -1,0 +1,49 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://quintoandar.com/schemas/settings/setting.schema.json",
+    "title": "Setting",
+    "description": "A remote setting or feature flag",
+    "type": "object",
+    "properties": {
+        "id": {
+            "description": "Computer-readable unique identifier of this setting within this file; this is the value used by client libraries and SDKs to retrieve this setting.",
+            "type": "string"
+        },
+        "name": {
+            "description": "Human-readable name of this setting.",
+            "type": [
+                "string"
+            ]
+        },
+        "type": {
+            "description": "Type of this flag. Right now only boolean values are supported.",
+            "type": [
+                "string"
+            ],
+            "enum": [
+                "bool"
+            ]
+        },
+        "forno": {
+            "description": "Configuration of this setting on the 'Forno' environment. This environment is used for developer testing.",
+            "$ref": "./environment.json#"
+        },
+        "staging": {
+            "description": "Configuration of this setting on the 'Staging' environment. This is the pre-production environment.",
+            "$ref": "./environment.json#"
+        },
+        "prod": {
+            "description": "Configuration of this setting on the 'Production' environment. Take extra-care when editing these values.",
+            "$ref": "./environment.json#"
+        }
+    },
+    "required": [
+        "id",
+        "name",
+        "description",
+        "type",
+        "forno",
+        "staging",
+        "prod"
+    ]
+}

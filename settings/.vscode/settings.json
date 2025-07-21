@@ -1,0 +1,11 @@
+{
+    "editor.rulers": [
+        88,
+    ],
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "rewrap.wrappingColumn": 88,
+    "yaml.schemas": {
+        "${workspaceFolder}/settings/.schema/settings.json": ["/settings/**/*.yaml", "/settings/**/*.yml"],
+    }
+}

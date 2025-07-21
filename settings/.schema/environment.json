@@ -1,0 +1,16 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://quintoandar.com/schemas/settings/environment.schema.json",
+    "title": "Environment",
+    "description": "An environment used by Settings and Feature Flags",
+    "type": "object",
+    "properties": {
+        "value": {
+            "description": "The value of the setting or feature flag. Right now only boolean values are supported.",
+            "type": "boolean"
+        }
+    },
+    "required": [
+        "value"
+    ]
+}
