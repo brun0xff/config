@@ -9,8 +9,8 @@ settings:
       If set to false then we use Twillio.
 
     # value type
-    #   for now only support bool type but in the future we can support "int", "string"
-    #   and "float"
+    # for now only support bool type but in the future we can support "int", "string"
+    # and "float"
     type: "bool"
 
     # values for each environment
