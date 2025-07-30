@@ -26,3 +26,16 @@ settings:
       value: false
     prod:
       value: true
+
+  - id: "enable_fulano_de_tal"
+    name: "Enable Fulano de Tal"
+    description: >
+      Whether or not to enable push notifications for new messages
+      If set to false then only email notifications are sent.
+    type: "bool"
+    forno:
+      value: true
+    staging:
+      value: true
+    prod:
+      value: false
