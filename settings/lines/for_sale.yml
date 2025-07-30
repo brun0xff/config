@@ -18,7 +18,7 @@ settings:
     name: "Enable Push Notifications"
     description: >
       Whether or not to enable push notifications for new messages
-      If set to false then only email notifications are sent.
+      If set to false then only email notifications are sent
     type: "bool"
     forno:
       value: true
