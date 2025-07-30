@@ -38,7 +38,7 @@ settings:
     staging:
       value: false
     prod:
-      value: true
+      value: false
 
   - id: "enable_mais_outra_ff"
     name: "Enable Mais outra FF"
