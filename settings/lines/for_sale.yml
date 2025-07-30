@@ -47,7 +47,7 @@ settings:
       If set to false then only email notifications are sent.
     type: "bool"
     forno:
-      value: false
+      value: true
     staging:
       value: false
     prod:
