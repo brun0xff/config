@@ -14,19 +14,6 @@ settings:
     prod:
       value: false
 
-  - id: "enable_push_notifications"
-    name: "Enable Push Notifications"
-    description: >
-      Whether or not to enable push notifications for new messages
-      If set to false then only email notifications are sent
-    type: "bool"
-    forno:
-      value: false
-    staging:
-      value: false
-    prod:
-      value: false
-
   - id: "enable_mais_uma_ff"
     name: "Enable Mais uma FF"
     description: >
