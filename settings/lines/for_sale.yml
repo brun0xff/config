@@ -38,4 +38,4 @@ settings:
     staging:
       value: false
     prod:
-      value: false
+      value: true
