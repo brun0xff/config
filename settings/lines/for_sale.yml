@@ -8,11 +8,11 @@ settings:
       If set to false then only email support is available.
     type: "bool"
     forno:
-      value: false
+      value: true
     staging:
       value: true
     prod:
-      value: true
+      value: false
 
   - id: "enable_push_notifications"
     name: "Enable Push Notifications"
@@ -21,11 +21,11 @@ settings:
       If set to false then only email notifications are sent.
     type: "bool"
     forno:
-      value: false
-    staging:
-      value: false
-    prod:
       value: true
+    staging:
+      value: true
+    prod:
+      value: false
 
   - id: "enable_fulano_de_tal"
     name: "Enable Fulano de Tal"
@@ -34,8 +34,8 @@ settings:
       If set to false then only email notifications are sent.
     type: "bool"
     forno:
-      value: false
+      value: true
     staging:
-      value: false
+      value: true
     prod:
       value: false
