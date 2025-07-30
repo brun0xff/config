@@ -49,6 +49,6 @@ settings:
     forno:
       value: true
     staging:
-      value: false
+      value: true
     prod:
       value: true
