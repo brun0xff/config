@@ -1,2 +1,28 @@
-name: "for_sale" # settings shared across the For Sale product line
-settings: []
+name: "for_sale"
+settings:
+
+  - id: "enable_live_chat"
+    name: "Enable Live Chat"
+    description: >
+      Whether or not to enable live chat functionality
+      If set to false then only email support is available.
+    type: "bool"
+    forno:
+      value: false
+    staging:
+      value: true
+    prod:
+      value: true
+
+  - id: "enable_push_notifications"
+    name: "Enable Push Notifications"
+    description: >
+      Whether or not to enable push notifications for new messages
+      If set to false then only email notifications are sent.
+    type: "bool"
+    forno:
+      value: false
+    staging:
+      value: false
+    prod:
+      value: true

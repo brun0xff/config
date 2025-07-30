@@ -1,2 +1,41 @@
-name: "fintech" # settings shared across the Fintech line
-settings: []
+name: "fintech"
+settings:
+
+  - id: "enable_pix_payments"
+    name: "Enable PIX Payments"
+    description: >
+      Whether or not to enable PIX payment method
+      If set to false then only credit card payments are available.
+    type: "bool"
+    forno:
+      value: false
+    staging:
+      value: true
+    prod:
+      value: true
+
+  - id: "enable_instant_transfer"
+    name: "Enable Instant Transfer"
+    description: >
+      Whether or not to enable instant bank transfers
+      If set to false then transfers take 1-2 business days.
+    type: "bool"
+    forno:
+      value: false
+    staging:
+      value: false
+    prod:
+      value: true
+
+  - id: "enable_crypto_payments"
+    name: "Enable Crypto Payments"
+    description: >
+      Whether or not to accept cryptocurrency payments
+      If set to false then only fiat currencies are accepted.
+    type: "bool"
+    forno:
+      value: false
+    staging:
+      value: false
+    prod:
+      value: false
