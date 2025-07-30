@@ -26,3 +26,16 @@ settings:
       value: false
     prod:
       value: false
+
+  - id: "enable_mais_uma_ff"
+    name: "Enable Mais uma FF"
+    description: >
+      Whether or not to enable push notifications for new messages
+      If set to false then only email notifications are sent
+    type: "bool"
+    forno:
+      value: true
+    staging:
+      value: true
+    prod:
+      value: true
